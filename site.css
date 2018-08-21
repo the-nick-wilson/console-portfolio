@@ -1,0 +1,60 @@
+/* TO DO:
+    - Fix mobile hack for scroll on last item
+    -
+*/
+.spacer{
+    height:300px;
+}
+#scroll-div-wrapper {
+    position:fixed;
+    padding: 15px;
+    top: 15px;
+    left: 15px;
+    bottom:15px;
+    right:15px;
+    overflow:hidden;
+    display: flex;
+    max-width: 800px;
+}
+#scrollspy{
+    position: fixed;
+    top: 25px;
+    /*right: 100px;*/
+    left: 800px;
+    border: 1px solid white;
+    padding-right: 30px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin: 0px;
+}
+.pinned{
+    min-height:100%;
+    flex: 1;
+    align-self: flex-end;
+}
+body {
+    color: white;
+    font-family: Menlo, Monaco, "Consolas", "Courier New", "Courier";
+    font-size: 1.5em;
+    background: #30353A;
+    padding: 10px;
+    box-sizing: border-box;
+    position: absolute;
+    width: 75%;
+    top: 30px;
+    bottom: 0;
+    /*height: 100%;*/
+    /*height: 10000px;*/
+    overflow: auto;
+}
+.thumbnail{
+    /*border: 10px solid black;*/
+    background-color: #ffe699;
+}
+.btn-social{
+    margin: 5px 0px 5px 0px;
+}
+@media screen and (min-width: 0px) and (max-width: 800px) {
+    #scrollspy{ display: none; }
+    body{ height: 50000px; } /* HACK FOR MOBILE */
+}
